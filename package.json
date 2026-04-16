@@ -1,0 +1,44 @@
+{
+  "name": "@bagdock/sdk",
+  "version": "0.1.0",
+  "description": "Official Bagdock API client for Node.js, Deno, Bun, and Cloudflare Workers",
+  "license": "MIT",
+  "author": "Bagdock <engineering@bagdock.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bagdock/bagdock-sdk"
+  },
+  "homepage": "https://docs.bagdock.com/sdks/node",
+  "bugs": "https://github.com/bagdock/bagdock-sdk/issues",
+  "keywords": ["bagdock", "sdk", "api", "self-storage", "typescript"],
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
