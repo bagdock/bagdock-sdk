@@ -27,5 +27,46 @@ export class Bagdock {
   }
 }
 
-export { BagdockApiError, type BagdockConfig, type PaginatedResponse, type ApiError } from './client'
+export {
+  BagdockApiError,
+  isApiKeyAuth,
+  isAccessTokenAuth,
+  isClientCredentialsAuth,
+  type BagdockConfig,
+  type ApiKeyAuth,
+  type AccessTokenAuth,
+  type ClientCredentialsAuth,
+  type BaseConfig,
+  type PaginatedResponse,
+  type ApiError,
+} from './client'
+
+export {
+  generatePKCE,
+  buildAuthorizeUrl,
+  exchangeCode,
+  refreshToken,
+  revokeToken,
+  introspectToken,
+  getUserinfo,
+  deviceAuthorize,
+  pollDeviceToken,
+  OAuthError,
+  OAuthTokenManager,
+  type OAuthEndpoints,
+  type TokenResponse,
+  type DeviceAuthResponse,
+  type IntrospectionResponse,
+  type UserinfoResponse,
+  type PKCEPair,
+  type AuthorizeUrlParams,
+  type ExchangeCodeParams,
+  type RefreshTokenParams,
+  type RevokeTokenParams,
+  type IntrospectParams,
+  type DeviceAuthorizeParams,
+  type PollDeviceTokenParams,
+  type ClientCredentialsConfig,
+} from './oauth'
+
 export type { Bagdock as BagdockClient }
