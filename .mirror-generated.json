@@ -1,0 +1,9 @@
+{
+  "generated": true,
+  "package": "@bagdock/sdk",
+  "source": "github.com/bagdock/bagdock",
+  "sourcePath": "packages/sdk",
+  "sourceRef": "8b19b071483f98b8489599e4c7854aa331fcacef",
+  "version": "0.1.1",
+  "doNotEdit": "This repository is a generated one-way mirror. Edit the source in the monorepo."
+}

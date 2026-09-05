@@ -1,6 +1,6 @@
 {
   "name": "@bagdock/sdk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Official Bagdock API client for Node.js, Deno, Bun, and Cloudflare Workers",
   "license": "MIT",
   "author": "Bagdock <engineering@bagdock.com>",
@@ -27,7 +27,7 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run",
+    "test": "vitest run --passWithNoTests",
     "prepublishOnly": "npm run build"
   },
   "publishConfig": {

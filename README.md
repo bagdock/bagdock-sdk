@@ -1,3 +1,12 @@
+<!--
+  ============================================================================
+  GENERATED RELEASE MIRROR - DO NOT EDIT HERE.
+  Source of truth: github.com/bagdock/bagdock (monorepo), packages/sdk.
+  Pull requests to this repository cannot be merged and are auto-closed.
+  Issues are welcome. Changes land in the monorepo and are re-synced here.
+  ============================================================================
+-->
+
 ```
   ----++                                ----++                    ---+++     
   ---+++                                ---++                     ---++      
@@ -174,7 +183,7 @@ Use an access token obtained from an external OAuth2 flow — ideal for connect 
 
 ```typescript
 const bagdock = new Bagdock({
-  accessToken: 'eyJhbGciOiJSUzI1NiIs...',
+  accessToken: '<oauth-access-token>',
 })
 ```
 
